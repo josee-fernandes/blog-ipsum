@@ -85,6 +85,27 @@ body {
   grid-area: RC;
 }
 
+.recent .article {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--clr-light);
+  border-radius: 1rem;
+}
+
+.recent .article__title {
+  color: var(--clr-dark);
+  text-align: center;
+}
+
+.recent .article__date {
+  color: var(--clr-secondary);
+  text-align: center;
+}
+
+.recent .article__text {
+  text-align: justify;
+}
+
 .additional {
   -ms-grid-row: 3;
   -ms-grid-column: 1;

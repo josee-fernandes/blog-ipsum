@@ -54,6 +54,27 @@
 
 .recent{
     grid-area: RC;
+
+    .article{
+        margin: 1rem;
+        padding: 1rem;
+        background-color: var(--clr-light);
+        border-radius: 1rem;
+
+        &__title{
+            color: var(--clr-dark);
+            text-align: center;
+        }
+
+        &__date{
+            color: var(--clr-secondary);
+            text-align: center;
+        }
+
+        &__text{
+            text-align: justify;
+        }
+    }
 }
 
 .additional{
