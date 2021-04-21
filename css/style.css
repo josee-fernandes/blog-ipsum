@@ -17,8 +17,8 @@ body {
 }
 
 #root {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  min-height: 100vh;
 }
 
 :root {
@@ -44,6 +44,7 @@ body {
     FT - Footer
 */
 #root {
+  position: relative;
   display: -ms-grid;
   display: grid;
   gap: 2rem;
@@ -267,6 +268,15 @@ body {
   color: var(--clr-light-tint);
   padding: 1rem 2rem;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 768px) {
