@@ -92,6 +92,7 @@
 
     &__first{
         padding: 1rem;
+        width: 100%;
 
         h3{
             color: var(--clr-primary);
@@ -144,7 +145,8 @@
 
     &__second{
         padding: 1rem;
-
+        width: 100%;
+        
         h3{
             color: var(--clr-primary);
             position: relative;
@@ -225,6 +227,24 @@
             'RC AD'
             'FT FT';
     }
+
+    .hero{ grid-area: HR; }
+
+    .recent{
+        .article{
+            &__title{
+                text-align: left;
+            }
+
+            &__date{
+                text-align: left;
+            }
+        }    
+    }
+
+    .additional{ grid-area: AD; }
+
+    .footer{ grid-area: FT; }
 }
 
 @media screen and (min-width: 1024px){

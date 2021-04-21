@@ -129,6 +129,7 @@ body {
 
 .additional__first {
   padding: 1rem;
+  width: 100%;
 }
 
 .additional__first h3 {
@@ -186,6 +187,7 @@ body {
 
 .additional__second {
   padding: 1rem;
+  width: 100%;
 }
 
 .additional__second h3 {
@@ -269,6 +271,30 @@ body {
   }
   #root {
         grid-template-areas: 'HR HR' 'RC AD' 'RC AD' 'FT FT';
+  }
+  .hero {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: HR;
+  }
+  .recent .article__title {
+    text-align: left;
+  }
+  .recent .article__date {
+    text-align: left;
+  }
+  .additional {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 2;
+    grid-area: AD;
+  }
+  .footer {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: FT;
   }
 }
 
