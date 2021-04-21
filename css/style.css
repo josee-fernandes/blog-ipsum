@@ -101,6 +101,8 @@ body {
   padding: 1rem;
   background-color: var(--clr-light);
   border-radius: 1rem;
+  -webkit-box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 7px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .recent .article__title {
@@ -225,6 +227,8 @@ body {
 .additional__second .social-list__item {
   text-decoration: none;
   position: relative;
+  -webkit-transition: opacity .2s;
+  transition: opacity .2s;
 }
 
 .additional__second .social-list__item:nth-child(1) a {
