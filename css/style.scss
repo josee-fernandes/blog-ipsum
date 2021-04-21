@@ -1,22 +1,93 @@
 @import './reset';
 
 :root{
+    --clr-primary: #577be0;
+    --clr-primary-tint: #6a8ae0;
+    --clr-primary-shade: #3e63ca;
+    --clr-secondary: #6d47c7;
+    --clr-secondary-tint: #8367c4;
+    --clr-secondary-shade: #6133cc;
+    --clr-dark: #292929;
+    --clr-dark-tint: #1b1b1b;
+    --clr-dark-shade: #111111;
+    --clr-light: #efefef;
+    --clr-light-tint: #ffffff;
+    --clr-light-shade: #dddddd;
     --grid-columns: 1;
+}
+
+/*
+    HR - Hero
+    RC - Recent
+    AD - Additional
+    FT - Footer
+*/
+
+#root{
+    display: grid;
+    grid-template-columns: repeat(var(--grid-columns), 1fr);
+    grid-template-areas: 
+        'HR'
+        'RC'
+        'AD'
+        'FT';
 }
 
 .container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     max-width: 1100px;
     margin: 0 auto;
+}
+
+.hero{
+    grid-area: HR;
+    width: 100vw;
+    padding: 2rem;
+    background-color: var(--clr-primary);
+    
+    h1{
+        color: var(--clr-light-tint)
+    }
+}
+
+.recent{
+    grid-area: RC;
+}
+
+.additional{
+    grid-area: AD;
+}
+
+.footer{
+    grid-area: FT;
 }
 
 @media screen and (min-width: 768px){
     :root{
         --grid-columns: 2;
     }
+
+    #root{
+        grid-template-areas: 
+            'HR HR'
+            'RC AD'
+            'RC AD'
+            'FT FT';
+    }
 }
 
 @media screen and (min-width: 1024px){
+    :root{
+        --grid-columns: 3;
+    }
 
+    #root{
+        grid-template-areas: 
+            'HR HR HR'
+            'RC RC AD'
+            'RC RC AD'
+            'FT FT FT';
+    }
 }
