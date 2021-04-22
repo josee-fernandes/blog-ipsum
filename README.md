@@ -1,3 +1,3 @@
-# Lorem Ipsum Blog
+# Blog Ipsum
 
 > Simple blog ui test for xGrow
