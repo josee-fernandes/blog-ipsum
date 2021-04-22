@@ -28,8 +28,8 @@ body {
   --clr-secondary: #6d47c7;
   --clr-secondary-tint: #8367c4;
   --clr-secondary-shade: #6133cc;
-  --clr-dark: #292929;
-  --clr-dark-tint: #1b1b1b;
+  --clr-dark: #1b1b1b;
+  --clr-dark-tint: #292929;
   --clr-dark-shade: #111111;
   --clr-light: #efefef;
   --clr-light-tint: #ffffff;
@@ -318,6 +318,27 @@ body {
   }
   #root {
         grid-template-areas: 'HR HR HR' 'RC RC AD' 'RC RC AD' 'FT FT FT';
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--clr-dark);
+  }
+  .recent .article {
+    background-color: var(--clr-dark-tint);
+  }
+  .recent .article__title {
+    color: var(--clr-light-tint);
+  }
+  .recent .article__date {
+    color: var(--clr-primary-tint);
+  }
+  .recent .article__text {
+    color: var(--clr-light);
+  }
+  .additional__first .last-ones-list__item a {
+    color: var(--clr-light);
   }
 }
 /*# sourceMappingURL=style.css.map */
